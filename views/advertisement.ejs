@@ -1,0 +1,37 @@
+<%- include('header'); -%>
+    <h4 class="p-4">Adversisement Management</h4>
+    <center>
+        <div class="d-flex justify-content-center ">
+            <div class="add_border">
+                <div class="p-2">
+                    <div class="container">
+                        <form action="" method="POST" class="find" id="registrationform">
+                            <progress value="0" id="uploader" max="100">0%</progress><br><br>
+
+                            <input type="hidden" id="val">
+                            <div class="Neon Neon-theme-dragdropbox">
+                                <input
+                                    style="z-index: 999; opacity: 0; width: 320px; height: 146px; position: absolute; right: 0px; left: 0px; margin-right: auto; margin-left: auto;"
+                                    name="mainimage" id="filer_input2" class="file" value="" type="file"
+                                    onchange="getfile()">
+                                <div class="Neon-input-dragDrop">
+                                    <div class="Neon-input-inner">
+                                        <div class="Neon-input-icon"><i class="fa fa-file-image-o"></i></div>
+                                        <div class="Neon-input-text">
+                                            <h3>Drag&amp;Drop files here</h3> <span
+                                                style="display:inline-block; margin: 15px 0">or</span>
+                                        </div><a class="Neon-input-choose-btn blue">Browse Files</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="submit_link" type="submit" name="button" class="btn btn-primary"
+                                sendMessage()>Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    </div>
+    </div>
+    <%- include('script'); -%>

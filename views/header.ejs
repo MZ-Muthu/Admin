@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Voler Admin Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/icon/font.css" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        progress {
+            border-radius: 7px;
+            width: 80%;
+            height: 22px;
+            margin-left: -11.5%;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active" style="position: fixed;">
+                <div class="sidebar-header">
+                    <img src="#" alt="" srcset="">
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class='sidebar-title'>Main Menu</li>
+                        <li class="sidebar-item active ">
+                            <a href="/" class='sidebar-link'>
+                                <i data-feather="home" width="20"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="briefcase" width="20"></i>
+                                <span>Account Details</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li>
+                                    <a href="/shopDetails">Shop Details</a>
+                                </li>
+                                <li>
+                                    <a href="/userDetails">User Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="advertisement.php" class='sidebar-link'>
+                                <i data-feather="bullhorn" width="20"></i>
+                                <span>Advertisement</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="message.php" class='sidebar-link'>
+                                <i data-feather="home" width="20"></i>
+                                <span>Message</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="services.php" class='sidebar-link'>
+                                <i data-feather="home" width="20"></i>
+                                <span>Services</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i class="fa fa-close" style="font-size: 12px;"></i>x</button>
+            </div>
+        </div>
+        <div id="main">
+            <nav class="navbar navbar-header navbar-expand navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <button class="btn navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center navbar-light ml-auto">
+
+                    </ul>
+                </div>
+            </nav>

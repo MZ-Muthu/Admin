@@ -1,0 +1,31 @@
+<%- include('header'); -%>
+
+    <center>
+        <div class="main-content container-fluid" style="overflow-x:auto;">
+            <table id="previousOrders" class="tablemanager">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Full Name</th>
+                        <th>Phone</th>
+
+
+                    </tr>
+                </thead>
+                <tbody id="tableget" onload="myfu()">
+                </tbody>
+            </table>
+        </div>
+    </center>
+
+    </div>
+    </div>
+    <script>
+        let a = "<%=userDetails%>";
+
+        let b = a.replace(/&gt;/g, '>');
+        let c = b.replace(/&lt;/g, '<');
+        console.log(c);
+        document.getElementById('tableget').innerHTML = c;
+    </script>
+    <%- include('script'); -%>

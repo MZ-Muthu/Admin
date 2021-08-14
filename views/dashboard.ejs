@@ -1,0 +1,84 @@
+<%- include('header'); -%>
+
+    <div class="main-content container-fluid">
+        <div class="page-title">
+            <h3>Dashboard</h3>
+            <p class="text-subtitle text-muted">A good dashboard to display your statistics</p>
+        </div>
+        <center>
+            <section class="section">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-3">
+                        <div class="card card-statistic">
+                            <div class="card-body p-0">
+                                <div class="d-flex flex-column">
+                                    <div class='px-3 py-3 d-flex justify-content-between'>
+                                        <div>
+                                            <h3 class='card-title'>Total Number of Shops</h3>
+                                        </div>
+                                        <br>
+
+
+                                    </div>
+                                    <h2 class="p-3 font-weight-bold text-white" id="getvalue">
+                                        <%=shop%>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card card-statistic">
+                            <div class="card-body p-0">
+                                <div class="d-flex flex-column">
+                                    <div class='px-3 py-3 d-flex justify-content-between'>
+                                        <h3 class='card-title'>Totla Number of Users</h3>
+                                        <div class="card-right d-flex align-items-center">
+
+                                        </div>
+                                    </div>
+                                    <h2 class="p-3 font-weight-bold text-white" id="getvalue1">
+                                        <%=user%>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card card-statistic">
+                            <div class="card-body p-0">
+                                <div class="d-flex flex-column">
+                                    <div class='px-3 py-3 d-flex justify-content-between'>
+                                        <h3 class='card-title'>Number of calls received</h3>
+
+                                    </div>
+                                    <h2 class="p-3 font-weight-bold text-white" id="getvalue2">
+                                        <%=calls%>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card card-statistic">
+                            <div class="card-body p-0">
+                                <div class="d-flex flex-column">
+                                    <div class='px-3 py-3 d-flex justify-content-between'>
+                                        <h3 class='card-title'>Sales Today</h3>
+
+                                    </div>
+                                    <h2 class="p-3 font-weight-bold text-white" id="getvalue">0</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </center>
+    </div>
+    <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Log Out</button>
+    </form>
+    </div>
+    </div>
+    <%- include('script'); -%>

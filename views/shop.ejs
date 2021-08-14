@@ -1,0 +1,42 @@
+<%- include('header'); -%>
+
+    <center>
+        <div class="main-content container-fluid" style="overflow-x:auto;">
+            <table id="previousOrders" class="tablemanager">
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>City</th>
+                        <th>Country Name</th>
+                        <th>Door No</th>
+                        <th>Email</th>
+                        <th>Full Name</th>
+                        <th>Latitude</th>
+                        <th>Longditute</th>
+                        <th>Phone Number</th>
+                        <th>Pincode</th>
+                        <th>Shop Close</th>
+                        <th>Shop Name</th>
+                        <th>Shop Open</th>
+                        <th>Shop Type</th>
+                        <th>Shop Work</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody id="tableget" onload="myfu()">
+
+                </tbody>
+            </table>
+        </div>
+    </center>
+    </div>
+    </div>
+    <script>
+        let a = "<%=shopDetails%>";
+
+        let b = a.replace(/&gt;/g, '>');
+        let c = b.replace(/&lt;/g, '<');
+        console.log(c);
+        document.getElementById('tableget').innerHTML = c;
+    </script>
+    <%- include('script'); -%>
